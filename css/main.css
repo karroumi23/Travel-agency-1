@@ -1,0 +1,18 @@
+:root {
+  --blue: #0080ff;
+}
+*{
+    font-family: poppins ,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    border: none;
+    transition: all .5s linear;
+}
+::selection{
+    background: orange;
+    color: wheat;
+}
+
