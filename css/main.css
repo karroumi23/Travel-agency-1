@@ -1,18 +1,90 @@
 :root {
   --blue: #0080ff;
 }
-*{
-    font-family: poppins ,sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    text-decoration: none;
-    border: none;
-    transition: all .5s linear;
+* {
+  font-family: poppins, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s linear;
 }
-::selection{
-    background: orange;
-    color: wheat;
+html {
+  font-size: 52%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* ----------------------------------Start header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding: 2rem 9%;
+}
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #fff;
+  text-transform: uppercase;
+}
+header .logo span {
+  color: var(--blue);
+}
+header .navbar a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0.8rem;
+}
+header .navbar a:hover {
+  color: var(--blue);
+}
+header .icon {
+  color: #fff;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+header .icon:hover {
+  color: var(--blue);
+}
+header .search-form {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #333;
+  display: flex;
+  align-items: center;
+  z-index: 101;
+  padding: 1.5rem 2rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .search-form.active {
+  clip-path: polygon(0 0, 100% 0 , 100% 100%, 0 100%);
+}
+header .search-form #search-bar {
+  width: 100%;
+  padding: 1rem;
+  color: #333;
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+}
+header .search-form label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+header .search-form label:hover {
+  color: var(--blue);
 }
 
+/* ----------------------------------End - header */
