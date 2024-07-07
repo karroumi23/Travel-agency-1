@@ -27,7 +27,7 @@
       </nav>
       <div class="icon">
         <i class="fas fa-search" onclick="showbar()" id="search-btn"></i>
-        <i class="fas fa-user"></i>
+        <i class="fas fa-user" onclick="showlogin()" id="login-btn"></i>
       </div>
       <form action="" class="search-form">
         <input
@@ -40,9 +40,10 @@
       <!----------------------------------------- End navbar -->
 
     </header>
-      <!----------------------------------------- Start log-in -->
+      <!----------------------------------------- Start login -->
       <div class="login-form">
         <form action="">
+            <i class="fas fa-times" onclick="hidinglogin()" id="hide-btn"></i>
           <h3>login</h3>
           <input type="email" class="box" placeholder="Enter Your Email" >
           <input type="password" class="box" placeholder="Enter Your password" >
@@ -53,7 +54,7 @@
           <p>don't have account ? <a href="">sign up</a></p>
         </form>
       </div>
-      <!-- --------------------------------------- End  log-in -->
+      <!-- --------------------------------------- End  login -->
     <script src="/main.js"></script>
   </body>
 </html>

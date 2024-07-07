@@ -101,6 +101,15 @@ header .search-form label:hover {
      align-items: center;
      z-index: 101;
   }
+  .login-form.active{
+    top: 0;
+  }
+  .login-form i{
+    font-size: large;
+    float: right;
+    cursor: pointer;
+  }
+ 
   .login-form form{
     margin: 2rem;
     padding: 1.5rem 2rem;
