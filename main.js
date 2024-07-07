@@ -15,6 +15,6 @@ let hideBtn = document.querySelector("#hide-btn");
 function showlogin() {
   loginForm.classList.add("active");
 }
-function hidinglogin() {
+function hidinglogin(){
   loginForm.classList.remove("active");
 }
