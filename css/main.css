@@ -9,7 +9,7 @@
   text-transform: capitalize;
   text-decoration: none;
   border: none;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
 }
 html {
   font-size: 52%;
@@ -29,6 +29,53 @@ header {
   z-index: 100;
   padding: 2rem 9%;
 }
+/* ------ Menu-Bar */
+#menu-icon{
+  font-size: 3rem;
+  color: #fff;
+  /* display: none; */
+}
+ .slide{
+  height:75vh;
+  width: 180px;
+  position: absolute;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  left: -19rem;
+  top: 57.5px;
+  z-index: 120;
+} 
+ .slide h1{
+    color: var(--blue);
+    font-weight: 800;
+    text-align: center;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+ }
+ .slide a{
+  color: #fff;
+  font-weight: 500;
+  padding: 5px 0 ;
+  display: block;
+  text-transform: capitalize;
+  transition: 0.2s ease-out;
+  font-size: 2rem;
+  width: 90%;
+  height: auto;
+  background: rgb(29, 31, 31);
+  margin-bottom:30px ;
+  padding-left: 5px;
+ }
+ .slide a:hover{
+  color: var(--blue);
+ }
+
+
+
+
 header .logo {
   font-size: 2.5rem;
   font-weight: bolder;
@@ -105,9 +152,14 @@ header .search-form label:hover {
     top: 0;
   }
   .login-form i{
-    font-size: large;
+    font-size: 2.5rem;
     float: right;
     cursor: pointer;
+    transition: 0s;
+
+  }
+  .login-form i:hover{
+    color: red;
   }
  
   .login-form form{
