@@ -34,8 +34,19 @@ header {
   font-size: 3rem;
   color: #fff;
   cursor: pointer;
-  /* display: none; */
+  display: none;
 }
+/***RESPONSIVE */
+@media(max-width:940px){
+  #menu-icon{
+    display: block;
+
+  }
+  .navbar{
+    display: none;
+  }
+}
+
  .slide{
   height:75vh;
   width: 180px;
@@ -45,10 +56,10 @@ header {
   flex-direction: column;
   align-items: center; 
   left: -22rem;
-  top: 57.5px;
+  top: 57.3px;
   z-index: 120;
+  
 } 
-
 .slide.active{
   left: 0;
 }
@@ -59,7 +70,7 @@ header {
     font-weight: 800;
     text-align: center;
     padding: 10px 0;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     pointer-events: none;
  }
  .slide a{
