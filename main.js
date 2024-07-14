@@ -26,6 +26,19 @@ function showbar() {
   searchForm.classList.toggle("active");
 }
 
+//hide the searchForm when clicking anywhere outside of it
+document.addEventListener('click', function(event) {
+  if (!searchForm.contains(event.target) && !searchBtn.contains(event.target)) {
+    if (searchForm.classList.contains('active')) {
+      searchForm.classList.remove('active');
+      searchBtn.classList.remove('fa-times');
+    }
+  }
+});
+
+// ******************************************************************************************
+
+
 // -----create function (show login-Form )
 let loginBtn = document.querySelector("#login-btn");
 let loginForm = document.querySelector(".login-form");
@@ -37,3 +50,5 @@ function showlogin() {
 function hidinglogin(){
   loginForm.classList.remove("active");
 }
+
+// ******************************************************************************************

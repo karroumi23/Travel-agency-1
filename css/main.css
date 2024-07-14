@@ -18,7 +18,7 @@ html {
 }
 /* ----------------------------------Start header */
 header {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;
@@ -31,7 +31,7 @@ header {
 }
 /* ------ Menu-Bar */
 #menu-icon{
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #fff;
   cursor: pointer;
   display: none;
@@ -45,6 +45,9 @@ header {
   .navbar{
     display: none;
   }
+  html{
+    font-size: 50%;
+  }
 }
 
  .slide{
@@ -55,8 +58,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  left: -22rem;
-  top: 57.3px;
+  left: -25rem;
+  top: 55.1px;
   z-index: 120;
   
 } 
