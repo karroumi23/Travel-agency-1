@@ -58,5 +58,8 @@ vidBtn.forEach((slide) => {
   slide.addEventListener("click", function () {
     document.querySelector(".controls .blue").classList.remove("blue");
     slide.classList.add("blue");
+    // add videos to the slider & change video when i click to the another span 
+    let src = slide.getAttribute("data-src");
+    document.querySelector("#video-slider").src = src;
   });
 });
