@@ -347,10 +347,65 @@ header .search-form label:hover {
    text-transform: none;
  }
 
-
-
-
 /* ---------------------------------END book-section */
+/* ---------------------------------START packages */
+.packages .container{
+  display: flex;
+  flex-wrap: wrap;
+  /* space between gap ||- */
+  gap:4.5rem;
+}
+.packages .container .box{
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.packages .container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+.packages .container .box .content{
+  padding:2rem;
+}
+.packages .container .box .content h3{
+   font-size: 2rem;
+   color: #333;
+}
+.packages .container .box .content h3 i{
+  color: var(--blue);
+  margin-right: .7rem;
+}
+.packages .container .box .content p{
+  font-size: 1.7rem;
+  color:#666;
+  padding: 1rem 0;
+}
+.packages .container .box .content .star i{
+  font-size: 1.7rem;
+  color: var(--blue);
+}
+.packages .container .box .content .price{
+   font-size: 2rem;
+   color: #333;
+   padding-top: 1rem;
+
+}
+.packages .container .box .content .price span{
+  font-size: 1.5rem;
+  color: #666;
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+/* ---------------------------------END packages */
+
 
 
 
