@@ -413,7 +413,7 @@ header .search-form label:hover {
      text-align: center;
    }
    .services .container  .box:hover{
-     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
      background: rgb(242, 237, 237);
    }
    .services .container  .box i{
