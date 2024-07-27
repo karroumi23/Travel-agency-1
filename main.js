@@ -15,8 +15,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// ******************************************************************************************
-
+// *******************************************search-bar*************************
 // -----create function (show search bar )
 let searchBtn = document.querySelector("#search-btn");
 let searchForm = document.querySelector(".search-form");
@@ -36,7 +35,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// **************************************************************************************
+// **************************************login************************************
 // -----create function (show login-Form )
 let loginBtn = document.querySelector("#login-btn");
 let loginForm = document.querySelector(".login-form");
@@ -49,17 +48,33 @@ function hidinglogin() {
   loginForm.classList.remove("active");
 }
 
-// ******************************************************************************************
+// *****************************************slider************************************
 //-----------------------------create function for section slider
 let vidBtn = document.querySelectorAll(".video-btn");
 
- // using foreach to remove the color of the span when I click on it
+// using foreach to remove the color of the span when I click on it
 vidBtn.forEach((slide) => {
   slide.addEventListener("click", function () {
     document.querySelector(".controls .blue").classList.remove("blue");
     slide.classList.add("blue");
-    // add videos to the slider & change video when i click to the another span 
+    // add videos to the slider & change video when i click to the another span
     let src = slide.getAttribute("data-src");
     document.querySelector("#video-slider").src = src;
   });
 });
+
+//*********************************************GALLARY**********************************
+ //create function in gallary section (when mouse move on the box display the content )
+
+let boxes = document.querySelectorAll(".box");       
+        boxes.forEach(box => {
+                   //box :  its function name 
+            let content = box.querySelector(".content");
+            box.onmousemove = function () {
+                content.style.top = "0";
+            };
+            box.onmouseleave = function () {
+                content.style.top = "-100%";
+            };
+        });
+//****************************************************************************************
