@@ -64,17 +64,37 @@ vidBtn.forEach((slide) => {
 });
 
 //*********************************************GALLARY**********************************
- //create function in gallary section (when mouse move on the box display the content )
+//create function in gallary section (when mouse move on the box display the content )
 
-let boxes = document.querySelectorAll(".box");       
-        boxes.forEach(box => {
-                   //box :  its function name 
-            let content = box.querySelector(".content");
-            box.onmousemove = function () {
-                content.style.top = "0";
-            };
-            box.onmouseleave = function () {
-                content.style.top = "-100%";
-            };
-        });
-//****************************************************************************************
+let boxes = document.querySelectorAll(".box");
+boxes.forEach((box) => {
+  //box :  its function name
+  let content = box.querySelector(".content");
+  box.onmousemove = function () {
+    content.style.top = "0";
+  };
+  box.onmouseleave = function () {
+    content.style.top = "-100%";
+  };
+});
+//********************************************* REVIEW **********************************
+// create slider function with swiper  library (js)
+var swiper = new Swiper(".review-slider", {
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 2300,
+  },
+  // responsive slider
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024:{
+      slidesPerView: 3,
+    }
+  },
+});
